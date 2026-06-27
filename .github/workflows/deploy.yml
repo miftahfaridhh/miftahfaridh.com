@@ -25,9 +25,11 @@ jobs:
         run: npm run build
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
+        run: |
+          npx vercel deploy \
+            --token=${{ secrets.VERCEL_TOKEN }} \
+            ${{ github.ref == 'refs/heads/main' && '--prod' || '' }} \
+            --yes
+        env:
+          VERCEL_ORG_ID: team_HuYhan61aNQxFOhtROokGV5z
+          VERCEL_PROJECT_ID: prj_BPTb84Zcc5bxLdNOs6m1Trb6W5rc
