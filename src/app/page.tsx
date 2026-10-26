@@ -8,12 +8,12 @@ const T = {
     "nav.projects": "Projects", "nav.career": "Career", "nav.contact": "Contact",
     "hero.tag": "Physical AI Engineer",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "I build machines that think and print. At Orinu I work on braille embossers end to end, from STM32 firmware to cloud print dispatch. Before that: edge AI on Jetson, optical camera communication, and autonomous marine vehicles.",
+    "hero.subtitle": "I build machines that think and print. At Orinu I work on braille printers end to end, from embedded firmware to the cloud. Before that: edge AI on Jetson, optical camera communication, and autonomous marine vehicles.",
     "hero.affiliation": 'M.S. Electronics Engineering, Kookmin University &mdash; Currently at <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, Seoul',
     "hero.cta": "Get in Touch", "hero.stat1": "Publications", "hero.stat2": "Int’l Awards",
     "hero.stat3": "Gov. Projects", "hero.stat4": "Open Source",
     "about.tag": "About", "about.title": "Engineer, Researcher<br>&amp; Problem Solver",
-    "about.p1": "Physical AI Engineer at Orinu, where I own printer and IoT integration for a braille platform: embosser firmware in C, Raspberry Pi device software, a Windows print agent, an MQTT IoT hub, and print dispatch in the cloud. That added up to 330+ merged pull requests across 15 repositories in my first year. I also fine-tune LLMs (LoRA, QLoRA, RAG) and run ROS 2 on NVIDIA Jetson, and I have published in IEEE Access and MDPI Sensors.",
+    "about.p1": "Physical AI Engineer at Orinu, where I own printer and IoT integration for a braille printing platform: embosser firmware in C, Raspberry Pi device software, a desktop print agent, device connectivity, and cloud print integration. I merged 300+ pull requests in my first year. I also fine-tune LLMs (LoRA, QLoRA, RAG) and run ROS 2 on NVIDIA Jetson, and I have published in IEEE Access and MDPI Sensors.",
     "about.p2": "From autonomous marine vehicles at University of Indonesia’s Robotics Team to 5G-connected drones at XL Axiata, from Optical Camera Communication research at Kookmin University to Smart Braille Printers at orinu.ai — I bridge AI and robotics to solve real-world problems.",
     "about.card1.title": "M.S. EE, Kookmin University", "about.card1.desc": "Seoul, South Korea (2022–2024)",
     "about.card2.title": "B.S. Computer Engineering", "about.card2.desc": "University of Indonesia (2018–2022)",
@@ -41,14 +41,13 @@ const T = {
     "proj.github": "View on GitHub",
     "proj.cat0": "Physical AI & Braille Printing at Orinu", "proj.cat0_count": "4 projects",
     "proj.niro.title": "Braille Embosser Firmware",
-    "proj.niro.desc": "Reverse-engineered an undocumented embosser USB protocol, then took over its STM32F446 firmware. An adaptive carriage sweep cut head travel on a test drawing from 33.7 m to 11.5 m, and the line limit grew from 126 to 336 so full-page tactile graphics print.",
-    "proj.niro.m1": "Less travel", "proj.niro.m2": "Faster carriage", "proj.niro.m3": "Max lines",
+    "proj.niro.desc": "Embosser firmware in C on an STM32 microcontroller. Carriage motion improvements shortened head travel and made full-page tactile graphics possible, validated on hardware.",
     "proj.tactile.title": "Tactile Graphics Pipeline",
-    "proj.tactile.desc": "Converts SVG, PDF, and raster images into embossed dot patterns for two embosser families. Reverse-engineered the Index Everest-D V4 tactile format and checked scale on paper with a ruler.",
+    "proj.tactile.desc": "Converts SVG, PDF, and raster images into embossed dot patterns for multiple embosser models, with scale checked on printed paper.",
     "proj.agent.title": "Windows Print Agent",
-    "proj.agent.desc": "Always-on desktop agent with OTP device pairing (RFC 8628), MQTT, and USB printer control. Packaged with PyInstaller and Inno Setup, code-signed through Azure Trusted Signing.",
+    "proj.agent.desc": "Always-on desktop agent with secure device pairing and USB printer control, shipped as a code-signed installer.",
     "proj.pi.title": "Raspberry Pi Printer Firmware 2.0",
-    "proj.pi.desc": "On-printer FastAPI + React firmware with OTA updates, LED and button UI, and on-device keyword spotting that hands the microphone to a Gemini voice agent.",
+    "proj.pi.desc": "On-printer firmware with a web UI, LED and button controls, and over-the-air updates.",
     "proj.cat1": "AI & Deep Learning Research", "proj.cat1_count": "3 projects",
     "proj.cat2": "Edge AI on NVIDIA Jetson", "proj.cat2_count": "8 projects",
     "proj.cat3": "IoT & Security Systems", "proj.cat3_count": "2 projects",
@@ -111,10 +110,10 @@ const T = {
     "research.r6": "Ultra High Rate OCC & Precision Localization",
     "exp.tag": "Career", "exp.title": "Professional Journey",
     "exp.e1.date": "Oct 2025 — Present", "exp.e1.role": "Physical AI Engineer",
-    "exp.e1.l1": "Own printer and IoT integration end to end: STM32 embosser firmware, Raspberry Pi firmware, Windows print agent, MQTT IoT hub, and cloud print dispatch (330+ merged PRs, 15 repositories)",
-    "exp.e1.l2": "Reverse-engineered an embosser USB protocol; firmware motion work cut carriage travel 66% and enabled full-page tactile graphics",
-    "exp.e1.l3": "Built SVG/PDF-to-tactile conversion and reverse-engineered the Index Everest-D V4 tactile format",
-    "exp.e1.l4": "Released Raspberry Pi printer firmware 2.0.0 with OTA, and shipped a code-signed Windows agent",
+    "exp.e1.l1": "Own printer and IoT integration end to end: embosser firmware, Raspberry Pi device software, desktop print agent, and cloud print integration (300+ merged PRs)",
+    "exp.e1.l2": "Embosser firmware in C, including carriage motion work that enabled full-page tactile graphics",
+    "exp.e1.l3": "Built SVG/PDF-to-tactile conversion for multiple embosser models",
+    "exp.e1.l4": "Released Raspberry Pi printer firmware with over-the-air updates, and shipped a code-signed Windows agent",
     "exp.e1.l5": "LLM fine-tuning for translation and RAG, plus robotic arm control with ROS 2 on Jetson",
     "exp.e2.role": "AI & IoT Researcher",
     "exp.e2.l1": "Engineered LED detection and tracking systems for adverse weather conditions",
@@ -148,12 +147,12 @@ const T = {
     "nav.projects": "프로젝트", "nav.career": "경력", "nav.contact": "연락처",
     "hero.tag": "피지컬 AI 엔지니어",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "Orinu에서 점자 엠보서를 STM32 펌웨어부터 클라우드 인쇄 전송까지 전 구간 개발합니다. 이전에는 Jetson 엣지 AI, 광학 카메라 통신, 자율 수상 로봇을 연구했습니다.",
+    "hero.subtitle": "Orinu에서 점자 프린터를 임베디드 펌웨어부터 클라우드까지 전 구간 개발합니다. 이전에는 Jetson 엣지 AI, 광학 카메라 통신, 자율 수상 로봇을 연구했습니다.",
     "hero.affiliation": '전자공학 석사, 국민대학교 &mdash; 현재 <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, 서울',
     "hero.cta": "연락하기", "hero.stat1": "논문", "hero.stat2": "국제 수상",
     "hero.stat3": "정부 프로젝트", "hero.stat4": "오픈소스",
     "about.tag": "소개", "about.title": "엔지니어, 연구자<br>&amp; 문제 해결사",
-    "about.p1": "Orinu의 피지컬 AI 엔지니어로서 점자 플랫폼의 프린터 및 IoT 연동을 담당합니다. C 기반 엠보서 펌웨어, 라즈베리 파이 디바이스 소프트웨어, Windows 인쇄 에이전트, MQTT IoT 허브, 클라우드 인쇄 전송까지 개발했으며 첫해에 15개 저장소에서 330건 이상의 PR을 병합했습니다. LLM 파인튜닝(LoRA, QLoRA, RAG)과 Jetson 기반 ROS 2 경험이 있고 IEEE Access와 MDPI Sensors에 논문을 발표했습니다.",
+    "about.p1": "Orinu의 피지컬 AI 엔지니어로서 점자 인쇄 플랫폼의 프린터 및 IoT 연동을 담당합니다. C 기반 엠보서 펌웨어, 라즈베리 파이 디바이스 소프트웨어, 데스크톱 인쇄 에이전트, 디바이스 연결, 클라우드 인쇄 연동을 개발했으며 첫해에 300건 이상의 PR을 병합했습니다. LLM 파인튜닝(LoRA, QLoRA, RAG)과 Jetson 기반 ROS 2 경험이 있고 IEEE Access와 MDPI Sensors에 논문을 발표했습니다.",
     "about.p2": "인도네시아 대학교 로보틱스팀의 자율 수상 선박부터 XL Axiata의 5G 드론, 국민대학교의 OCC 연구부터 orinu.ai의 스마트 점자 프린터까지.",
     "about.card1.title": "전자공학 석사, 국민대학교", "about.card1.desc": "서울, 대한민국 (2022–2024)",
     "about.card2.title": "컴퓨터공학 학사", "about.card2.desc": "인도네시아 대학교 (2018–2022)",
@@ -181,14 +180,13 @@ const T = {
     "proj.github": "GitHub에서 보기",
     "proj.cat0": "Orinu 피지컬 AI & 점자 인쇄", "proj.cat0_count": "4개 프로젝트",
     "proj.niro.title": "점자 엠보서 펌웨어",
-    "proj.niro.desc": "문서화되지 않은 엠보서 USB 프로토콜을 역공학하고 STM32F446 펌웨어를 인수했습니다. 적응형 캐리지 스윕으로 테스트 도면의 헤드 이동 거리를 33.7m에서 11.5m로 줄였고, 줄 수 한도를 126에서 336으로 늘려 전면 촉각 그래픽 인쇄가 가능해졌습니다.",
-    "proj.niro.m1": "이동 감소", "proj.niro.m2": "캐리지 속도", "proj.niro.m3": "최대 줄 수",
+    "proj.niro.desc": "STM32 마이크로컨트롤러 기반 C 엠보서 펌웨어. 캐리지 모션 개선으로 헤드 이동을 줄이고 전면 촉각 그래픽 인쇄를 가능하게 했으며 하드웨어에서 검증했습니다.",
     "proj.tactile.title": "촉각 그래픽 파이프라인",
-    "proj.tactile.desc": "SVG, PDF, 래스터 이미지를 두 종류의 엠보서용 점 패턴으로 변환합니다. Index Everest-D V4 촉각 포맷을 역공학하고 자로 종이 위 배율을 검증했습니다.",
+    "proj.tactile.desc": "SVG, PDF, 래스터 이미지를 여러 엠보서 모델용 점 패턴으로 변환하고, 인쇄된 종이에서 배율을 검증했습니다.",
     "proj.agent.title": "Windows 인쇄 에이전트",
-    "proj.agent.desc": "OTP 디바이스 페어링(RFC 8628), MQTT, USB 프린터 제어를 갖춘 상시 실행 에이전트. PyInstaller와 Inno Setup으로 패키징하고 Azure Trusted Signing으로 코드 서명.",
+    "proj.agent.desc": "보안 디바이스 페어링과 USB 프린터 제어를 갖춘 상시 실행 데스크톱 에이전트. 코드 서명된 설치 파일로 배포.",
     "proj.pi.title": "라즈베리 파이 프린터 펌웨어 2.0",
-    "proj.pi.desc": "OTA 업데이트, LED/버튼 UI, 마이크를 Gemini 음성 에이전트에 넘겨주는 온디바이스 키워드 인식을 갖춘 FastAPI + React 펌웨어.",
+    "proj.pi.desc": "웹 UI, LED/버튼 제어, OTA 업데이트를 갖춘 프린터 탑재 펌웨어.",
     "proj.cat1": "AI & 딥러닝 연구", "proj.cat1_count": "3개 프로젝트",
     "proj.cat2": "NVIDIA Jetson Edge AI", "proj.cat2_count": "8개 프로젝트",
     "proj.cat3": "IoT & 보안 시스템", "proj.cat3_count": "2개 프로젝트",
@@ -237,10 +235,10 @@ const T = {
     "research.r6": "초고속 OCC 및 정밀 위치 추정",
     "exp.tag": "경력", "exp.title": "전문 경력",
     "exp.e1.date": "2025년 10월 — 현재", "exp.e1.role": "피지컬 AI 엔지니어",
-    "exp.e1.l1": "프린터 및 IoT 연동 전 구간 담당: STM32 엠보서 펌웨어, 라즈베리 파이 펌웨어, Windows 인쇄 에이전트, MQTT IoT 허브, 클라우드 인쇄 전송 (15개 저장소, 330건 이상 PR 병합)",
-    "exp.e1.l2": "엠보서 USB 프로토콜 역공학, 펌웨어 모션 개선으로 캐리지 이동 66% 감소 및 전면 촉각 그래픽 지원",
-    "exp.e1.l3": "SVG/PDF 촉각 변환 개발 및 Index Everest-D V4 촉각 포맷 역공학",
-    "exp.e1.l4": "라즈베리 파이 프린터 펌웨어 2.0.0(OTA) 출시, 코드 서명된 Windows 에이전트 배포",
+    "exp.e1.l1": "프린터 및 IoT 연동 전 구간 담당: 엠보서 펌웨어, 라즈베리 파이 소프트웨어, 데스크톱 인쇄 에이전트, 클라우드 인쇄 연동 (300건 이상 PR 병합)",
+    "exp.e1.l2": "C 기반 엠보서 펌웨어 개발, 캐리지 모션 개선으로 전면 촉각 그래픽 지원",
+    "exp.e1.l3": "여러 엠보서 모델을 위한 SVG/PDF 촉각 변환 개발",
+    "exp.e1.l4": "OTA를 지원하는 라즈베리 파이 프린터 펌웨어 출시, 코드 서명된 Windows 에이전트 배포",
     "exp.e1.l5": "번역 및 RAG를 위한 LLM 파인튜닝, Jetson 기반 ROS 2 로봇 암 제어",
     "exp.e2.role": "AI & IoT 연구원",
     "exp.e2.l1": "악조건 환경에서의 LED 감지 및 추적 시스템 개발",
@@ -274,12 +272,12 @@ const T = {
     "nav.projects": "Proyek", "nav.career": "Karir", "nav.contact": "Kontak",
     "hero.tag": "Physical AI Engineer",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "Di Orinu saya mengembangkan embosser braille dari ujung ke ujung, dari firmware STM32 sampai pengiriman cetak di cloud. Sebelumnya: edge AI di Jetson, optical camera communication, dan kendaraan laut otonom.",
+    "hero.subtitle": "Di Orinu saya mengembangkan printer braille dari ujung ke ujung, dari firmware embedded sampai cloud. Sebelumnya: edge AI di Jetson, optical camera communication, dan kendaraan laut otonom.",
     "hero.affiliation": 'M.S. Teknik Elektronika, Kookmin University &mdash; Saat ini di <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, Seoul',
     "hero.cta": "Hubungi Saya", "hero.stat1": "Publikasi", "hero.stat2": "Penghargaan Int'l",
     "hero.stat3": "Proyek Pemerintah", "hero.stat4": "Open Source",
     "about.tag": "Tentang", "about.title": "Engineer, Peneliti<br>&amp; Problem Solver",
-    "about.p1": "Physical AI Engineer di Orinu, memegang integrasi printer dan IoT untuk platform braille: firmware embosser dalam C, software perangkat Raspberry Pi, agen cetak Windows, IoT hub MQTT, dan pengiriman cetak di cloud. Di tahun pertama saya menggabungkan 330+ pull request di 15 repositori. Saya juga melakukan fine-tuning LLM (LoRA, QLoRA, RAG), menjalankan ROS 2 di NVIDIA Jetson, dan menerbitkan paper di IEEE Access dan MDPI Sensors.",
+    "about.p1": "Physical AI Engineer di Orinu, memegang integrasi printer dan IoT untuk platform cetak braille: firmware embosser dalam C, software perangkat Raspberry Pi, agen cetak desktop, konektivitas perangkat, dan integrasi cetak di cloud. Di tahun pertama saya menggabungkan 300+ pull request. Saya juga melakukan fine-tuning LLM (LoRA, QLoRA, RAG), menjalankan ROS 2 di NVIDIA Jetson, dan menerbitkan paper di IEEE Access dan MDPI Sensors.",
     "about.p2": "Dari kendaraan laut otonom di Tim Robotika Universitas Indonesia hingga drone terkoneksi 5G di XL Axiata, dari OCC di Kookmin University hingga Smart Braille Printer di orinu.ai — saya menjembatani AI dan robotika.",
     "about.card1.title": "M.S. EE, Kookmin University", "about.card1.desc": "Seoul, Korea Selatan (2022–2024)",
     "about.card2.title": "S1 Teknik Komputer", "about.card2.desc": "Universitas Indonesia (2018–2022)",
@@ -307,14 +305,13 @@ const T = {
     "proj.github": "Lihat di GitHub",
     "proj.cat0": "Physical AI & Cetak Braille di Orinu", "proj.cat0_count": "4 proyek",
     "proj.niro.title": "Firmware Embosser Braille",
-    "proj.niro.desc": "Membongkar protokol USB embosser yang tidak terdokumentasi, lalu mengambil alih firmware STM32F446-nya. Sweep carriage adaptif memangkas jarak tempuh head pada gambar uji dari 33,7 m ke 11,5 m, dan batas baris naik dari 126 ke 336 sehingga grafik taktil satu halaman penuh bisa dicetak.",
-    "proj.niro.m1": "Jarak berkurang", "proj.niro.m2": "Carriage lebih cepat", "proj.niro.m3": "Baris maks",
+    "proj.niro.desc": "Firmware embosser dalam C di mikrokontroler STM32. Perbaikan gerak carriage memperpendek jarak tempuh head dan memungkinkan grafik taktil satu halaman penuh, diverifikasi di hardware.",
     "proj.tactile.title": "Pipeline Grafik Taktil",
-    "proj.tactile.desc": "Mengubah SVG, PDF, dan gambar raster menjadi pola titik timbul untuk dua keluarga embosser. Membongkar format taktil Index Everest-D V4 dan memverifikasi skala di kertas dengan penggaris.",
+    "proj.tactile.desc": "Mengubah SVG, PDF, dan gambar raster menjadi pola titik timbul untuk beberapa model embosser, dengan skala diverifikasi di kertas.",
     "proj.agent.title": "Agen Cetak Windows",
-    "proj.agent.desc": "Agen desktop yang selalu aktif dengan pairing OTP (RFC 8628), MQTT, dan kontrol printer USB. Dikemas dengan PyInstaller dan Inno Setup, ditandatangani lewat Azure Trusted Signing.",
+    "proj.agent.desc": "Agen desktop yang selalu aktif dengan pairing perangkat yang aman dan kontrol printer USB, dirilis sebagai installer yang ditandatangani.",
     "proj.pi.title": "Firmware Printer Raspberry Pi 2.0",
-    "proj.pi.desc": "Firmware FastAPI + React di printer dengan update OTA, UI LED dan tombol, serta keyword spotting on-device yang menyerahkan mikrofon ke voice agent Gemini.",
+    "proj.pi.desc": "Firmware di dalam printer dengan UI web, kontrol LED dan tombol, serta update OTA.",
     "proj.cat1": "Riset AI & Deep Learning", "proj.cat1_count": "3 proyek",
     "proj.cat2": "Edge AI di NVIDIA Jetson", "proj.cat2_count": "8 proyek",
     "proj.cat3": "Sistem IoT & Keamanan", "proj.cat3_count": "2 proyek",
@@ -363,10 +360,10 @@ const T = {
     "research.r6": "OCC Ultra High Rate & Lokalisasi Presisi",
     "exp.tag": "Karir", "exp.title": "Perjalanan Profesional",
     "exp.e1.date": "Okt 2025 — Sekarang", "exp.e1.role": "Physical AI Engineer",
-    "exp.e1.l1": "Memegang integrasi printer dan IoT dari ujung ke ujung: firmware embosser STM32, firmware Raspberry Pi, agen cetak Windows, IoT hub MQTT, dan pengiriman cetak cloud (330+ PR di 15 repositori)",
-    "exp.e1.l2": "Membongkar protokol USB embosser; perbaikan gerak di firmware memangkas jarak carriage 66% dan membuka grafik taktil satu halaman penuh",
-    "exp.e1.l3": "Membangun konversi SVG/PDF ke taktil dan membongkar format taktil Index Everest-D V4",
-    "exp.e1.l4": "Merilis firmware printer Raspberry Pi 2.0.0 dengan OTA dan agen Windows yang ditandatangani",
+    "exp.e1.l1": "Memegang integrasi printer dan IoT dari ujung ke ujung: firmware embosser, software Raspberry Pi, agen cetak desktop, dan integrasi cetak cloud (300+ PR)",
+    "exp.e1.l2": "Firmware embosser dalam C, termasuk perbaikan gerak carriage yang membuka grafik taktil satu halaman penuh",
+    "exp.e1.l3": "Membangun konversi SVG/PDF ke taktil untuk beberapa model embosser",
+    "exp.e1.l4": "Merilis firmware printer Raspberry Pi dengan update OTA dan agen Windows yang ditandatangani",
     "exp.e1.l5": "Fine-tuning LLM untuk terjemahan dan RAG, serta kontrol lengan robot dengan ROS 2 di Jetson",
     "exp.e2.role": "Peneliti AI & IoT",
     "exp.e2.l1": "Merancang sistem deteksi dan pelacakan LED untuk cuaca buruk",
@@ -591,21 +588,16 @@ export default function Home() {
             </div>
             <div className="bento-grid">
               <div className="bento-card featured reveal">
-                <div className="bento-card-type">Embedded C / STM32 / Reverse Engineering</div>
+                <div className="bento-card-type">Embedded C / Firmware</div>
                 <h3>{t('proj.niro.title')}</h3>
                 <p>{t('proj.niro.desc')}</p>
-                <div className="bento-tags">{['C','STM32F446','USB','Stepper Motion','Python'].map(tag => <span key={tag} className="bento-tag">{tag}</span>)}</div>
-                <div className="bento-metrics">
-                  <div className="bento-metric"><strong>66%</strong><span>{t('proj.niro.m1')}</span></div>
-                  <div className="bento-metric"><strong>+14%</strong><span>{t('proj.niro.m2')}</span></div>
-                  <div className="bento-metric"><strong>336</strong><span>{t('proj.niro.m3')}</span></div>
-                </div>
+                <div className="bento-tags">{['C','STM32','Embedded','Motion Control'].map(tag => <span key={tag} className="bento-tag">{tag}</span>)}</div>
                 <a href="https://orinu.ai/" className="bento-link" target="_blank" rel="noopener"><span>orinu.ai</span> <Arrow /></a>
               </div>
               {([
-                { key: 'tactile', type: 'Accessibility / Tactile Graphics', tags: ['Python','SVG','PDF','Index Everest-D'] },
-                { key: 'agent', type: 'Windows Agent / IoT', tags: ['Python','MQTT','PyInstaller','Code Signing'] },
-                { key: 'pi', type: 'Raspberry Pi / Voice', tags: ['FastAPI','React','OTA','Keyword Spotting'] },
+                { key: 'tactile', type: 'Accessibility / Tactile Graphics', tags: ['Python','SVG','PDF','Accessibility'] },
+                { key: 'agent', type: 'Windows Agent / IoT', tags: ['Python','Windows','USB','IoT'] },
+                { key: 'pi', type: 'Raspberry Pi / Embedded Linux', tags: ['Raspberry Pi','Python','React','OTA'] },
               ] as const).map((p) => (
                 <div key={p.key} className="bento-card reveal">
                   <div className="bento-card-type">{p.type}</div>
@@ -831,7 +823,7 @@ export default function Home() {
               </div>
             </div>
             <div className="exp-item reveal">
-              <div className="exp-date">Feb 2022 &mdash; Jun 2022</div>
+              <div className="exp-date">Feb 2022 &mdash; May 2022</div>
               <div className="exp-content">
                 <h3>{t('exp.e3.role')}</h3>
                 <h4>PT. XL Axiata Tbk &middot; Jakarta, Indonesia</h4>
