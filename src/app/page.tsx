@@ -8,12 +8,12 @@ const T = {
     "nav.projects": "Projects", "nav.career": "Career", "nav.contact": "Contact",
     "hero.tag": "Physical AI Engineer",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "Building intelligent systems at the intersection of AI, robotics, and edge computing. From LLM fine-tuning and smart braille printers to autonomous marine vehicles.",
+    "hero.subtitle": "I build machines that think and print. At Orinu I work on braille printers end to end, from embedded firmware to the cloud. Before that: edge AI on Jetson, optical camera communication, and autonomous marine vehicles.",
     "hero.affiliation": 'M.S. Electronics Engineering, Kookmin University &mdash; Currently at <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, Seoul',
     "hero.cta": "Get in Touch", "hero.stat1": "Publications", "hero.stat2": "Int’l Awards",
     "hero.stat3": "Gov. Projects", "hero.stat4": "Open Source",
     "about.tag": "About", "about.title": "Engineer, Researcher<br>&amp; Problem Solver",
-    "about.p1": "AI Developer and Robotics Engineer with hands-on experience in LLM fine-tuning (T5, Gemma, LLaMA with LoRA, QLoRA, and RAG) and real-time robotic systems using ROS 2 and NVIDIA Jetson platforms. Proven track record in applied research, publishing papers in IEEE Access and MDPI Sensors, and building intelligent systems across industries.",
+    "about.p1": "Physical AI Engineer at Orinu, where I own printer and IoT integration for a braille printing platform: embosser firmware in C, Raspberry Pi device software, a desktop print agent, device connectivity, and cloud print integration. I merged 300+ pull requests in my first year. I also fine-tune LLMs (LoRA, QLoRA, RAG) and run ROS 2 on NVIDIA Jetson, and I have published in IEEE Access and MDPI Sensors.",
     "about.p2": "From autonomous marine vehicles at University of Indonesia’s Robotics Team to 5G-connected drones at XL Axiata, from Optical Camera Communication research at Kookmin University to Smart Braille Printers at orinu.ai — I bridge AI and robotics to solve real-world problems.",
     "about.card1.title": "M.S. EE, Kookmin University", "about.card1.desc": "Seoul, South Korea (2022–2024)",
     "about.card2.title": "B.S. Computer Engineering", "about.card2.desc": "University of Indonesia (2018–2022)",
@@ -39,10 +39,21 @@ const T = {
     "proj.tag": "Portfolio", "proj.title": "Projects & Open Source",
     "proj.desc": "AI/ML research, Edge AI deployments on Jetson, IoT systems, and full-stack applications.",
     "proj.github": "View on GitHub",
-    "proj.cat1": "AI & Deep Learning Research", "proj.cat1_count": "2 projects",
+    "proj.cat0": "Physical AI & Braille Printing at Orinu", "proj.cat0_count": "4 projects",
+    "proj.niro.title": "Braille Embosser Firmware",
+    "proj.niro.desc": "Embosser firmware in C on an STM32 microcontroller. Carriage motion improvements shortened head travel and made full-page tactile graphics possible, validated on hardware.",
+    "proj.tactile.title": "Tactile Graphics Pipeline",
+    "proj.tactile.desc": "Converts SVG, PDF, and raster images into embossed dot patterns for multiple embosser models, with scale checked on printed paper.",
+    "proj.agent.title": "Windows Print Agent",
+    "proj.agent.desc": "Always-on desktop agent with secure device pairing and USB printer control, shipped as a code-signed installer.",
+    "proj.pi.title": "Raspberry Pi Printer Firmware 2.0",
+    "proj.pi.desc": "On-printer firmware with a web UI, LED and button controls, and over-the-air updates.",
+    "proj.cat1": "AI & Deep Learning Research", "proj.cat1_count": "3 projects",
     "proj.cat2": "Edge AI on NVIDIA Jetson", "proj.cat2_count": "8 projects",
     "proj.cat3": "IoT & Security Systems", "proj.cat3_count": "2 projects",
-    "proj.cat4": "Web Applications", "proj.cat4_count": "4 projects",
+    "proj.cat4": "Desktop & Web Applications", "proj.cat4_count": "5 projects",
+    "proj.mdview.title": "Markdown Viewer",
+    "proj.mdview.desc": "Lightweight, offline-first Markdown viewer for Windows built with Tauri v2 and Rust.",
     "proj.pv.title": "PV Solar Power Forecasting API",
     "proj.pv.desc": "Next-day photovoltaic solar power prediction across 10 South Korean sites. Flask REST API with 6 deep learning architectures trained on Korea Meteorological Administration weather data.",
     "proj.pv.detail": "<strong>Models:</strong> BiLSTM, Stacked BiLSTM, LSTM, ConvLSTM, RNN — trained on 12 weather features with 24-hour sliding window. Published in Sensors 2023 (MDPI) and ICUFN 2023.",
@@ -99,9 +110,11 @@ const T = {
     "research.r6": "Ultra High Rate OCC & Precision Localization",
     "exp.tag": "Career", "exp.title": "Professional Journey",
     "exp.e1.date": "Oct 2025 — Present", "exp.e1.role": "Physical AI Engineer",
-    "exp.e1.l1": "LLM fine-tuning for translation & Retrieval-Augmented Generation (RAG) projects",
-    "exp.e1.l2": "Smart Braille Printer development using robotic systems",
-    "exp.e1.l3": "Robotic arm development with ROS 2 on Jetson platforms",
+    "exp.e1.l1": "Own printer and IoT integration end to end: embosser firmware, Raspberry Pi device software, desktop print agent, and cloud print integration (300+ merged PRs)",
+    "exp.e1.l2": "Embosser firmware in C, including carriage motion work that enabled full-page tactile graphics",
+    "exp.e1.l3": "Built SVG/PDF-to-tactile conversion for multiple embosser models",
+    "exp.e1.l4": "Released Raspberry Pi printer firmware with over-the-air updates, and shipped a code-signed Windows agent",
+    "exp.e1.l5": "Braille language model (LoRA, QLoRA, RAG), a UEB/Nemeth converter, and PID control for a ROS 2 robotic arm, supervising the junior engineer who built the arm",
     "exp.e2.role": "AI & IoT Researcher",
     "exp.e2.l1": "Engineered LED detection and tracking systems for adverse weather conditions",
     "exp.e2.l2": "Built time-series forecasting models to predict PV power generation using weather data",
@@ -132,24 +145,24 @@ const T = {
   ko: {
     "nav.about": "소개", "nav.expertise": "전문분야", "nav.papers": "논문",
     "nav.projects": "프로젝트", "nav.career": "경력", "nav.contact": "연락처",
-    "hero.tag": "피지컴 AI 엔지니어",
+    "hero.tag": "피지컬 AI 엔지니어",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "AI, 로보틱스, 엣지 컴퓨팅의 교차점에서 지능형 시스템을 구축합니다.",
+    "hero.subtitle": "Orinu에서 점자 프린터를 임베디드 펌웨어부터 클라우드까지 전 구간 개발합니다. 이전에는 Jetson 엣지 AI, 광학 카메라 통신, 자율 수상 로봇을 연구했습니다.",
     "hero.affiliation": '전자공학 석사, 국민대학교 &mdash; 현재 <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, 서울',
     "hero.cta": "연락하기", "hero.stat1": "논문", "hero.stat2": "국제 수상",
     "hero.stat3": "정부 프로젝트", "hero.stat4": "오픈소스",
     "about.tag": "소개", "about.title": "엔지니어, 연구자<br>&amp; 문제 해결사",
-    "about.p1": "LLM 파인튀닝(T5, Gemma, LLaMA with LoRA, QLoRA, RAG)과 ROS 2 및 NVIDIA Jetson 플랫폼을 활용한 실시간 로보틱스 시스템에 실무 경험을 가진 AI 개발자 및 로보틱스 엔지니어입니다.",
+    "about.p1": "Orinu의 피지컬 AI 엔지니어로서 점자 인쇄 플랫폼의 프린터 및 IoT 연동을 담당합니다. C 기반 엠보서 펌웨어, 라즈베리 파이 디바이스 소프트웨어, 데스크톱 인쇄 에이전트, 디바이스 연결, 클라우드 인쇄 연동을 개발했으며 첫해에 300건 이상의 PR을 병합했습니다. LLM 파인튜닝(LoRA, QLoRA, RAG)과 Jetson 기반 ROS 2 경험이 있고 IEEE Access와 MDPI Sensors에 논문을 발표했습니다.",
     "about.p2": "인도네시아 대학교 로보틱스팀의 자율 수상 선박부터 XL Axiata의 5G 드론, 국민대학교의 OCC 연구부터 orinu.ai의 스마트 점자 프린터까지.",
     "about.card1.title": "전자공학 석사, 국민대학교", "about.card1.desc": "서울, 대한민국 (2022–2024)",
     "about.card2.title": "컴퓨터공학 학사", "about.card2.desc": "인도네시아 대학교 (2018–2022)",
-    "about.card3.title": "피지컴 AI 엔지니어",
+    "about.card3.title": "피지컬 AI 엔지니어",
     "about.card3.desc": '<a href="https://orinu.ai/" target="_blank" rel="noopener" style="color: var(--accent);">orinu.ai</a> — 화성, 대한민국',
     "about.card4.title": "서울 거주", "about.card4.desc": "글로벌 기회 열림",
-    "expertise.tag": "전문분야", "expertise.title": "핸심 역량",
+    "expertise.tag": "전문분야", "expertise.title": "핵심 역량",
     "expertise.desc": "로보틱스, 엣지 컴퓨팅, 통신, 지능형 시스템 전반에 걸친 AI 연구와 엔지니어링의 연결.",
     "expertise.c1.title": "LLM & 생성형 AI",
-    "expertise.c1.desc": "대규모 언어 모델(T5, Gemma, LLaMA) LoRA, QLoRA, RAG 파이프라인으로 파인튀닝.",
+    "expertise.c1.desc": "대규모 언어 모델(T5, Gemma, LLaMA) LoRA, QLoRA, RAG 파이프라인으로 파인튜닝.",
     "expertise.c2.title": "로보틱스 & ROS 2",
     "expertise.c2.desc": "Jetson 플랫폼 기반 실시간 로보틱스 시스템. 로보틱 암, USV/AUV, 드론.",
     "expertise.c3.title": "엣지 AI & 배포",
@@ -165,14 +178,25 @@ const T = {
     "proj.tag": "포트폴리오", "proj.title": "프로젝트 & 오픈소스",
     "proj.desc": "AI/ML 연구, Jetson Edge AI 배포, IoT 시스템 및 풀스택 애플리케이션.",
     "proj.github": "GitHub에서 보기",
-    "proj.cat1": "AI & 딥러닝 연구", "proj.cat1_count": "2개 프로젝트",
+    "proj.cat0": "Orinu 피지컬 AI & 점자 인쇄", "proj.cat0_count": "4개 프로젝트",
+    "proj.niro.title": "점자 엠보서 펌웨어",
+    "proj.niro.desc": "STM32 마이크로컨트롤러 기반 C 엠보서 펌웨어. 캐리지 모션 개선으로 헤드 이동을 줄이고 전면 촉각 그래픽 인쇄를 가능하게 했으며 하드웨어에서 검증했습니다.",
+    "proj.tactile.title": "촉각 그래픽 파이프라인",
+    "proj.tactile.desc": "SVG, PDF, 래스터 이미지를 여러 엠보서 모델용 점 패턴으로 변환하고, 인쇄된 종이에서 배율을 검증했습니다.",
+    "proj.agent.title": "Windows 인쇄 에이전트",
+    "proj.agent.desc": "보안 디바이스 페어링과 USB 프린터 제어를 갖춘 상시 실행 데스크톱 에이전트. 코드 서명된 설치 파일로 배포.",
+    "proj.pi.title": "라즈베리 파이 프린터 펌웨어 2.0",
+    "proj.pi.desc": "웹 UI, LED/버튼 제어, OTA 업데이트를 갖춘 프린터 탑재 펌웨어.",
+    "proj.cat1": "AI & 딥러닝 연구", "proj.cat1_count": "3개 프로젝트",
     "proj.cat2": "NVIDIA Jetson Edge AI", "proj.cat2_count": "8개 프로젝트",
     "proj.cat3": "IoT & 보안 시스템", "proj.cat3_count": "2개 프로젝트",
-    "proj.cat4": "웹 애플리케이션", "proj.cat4_count": "4개 프로젝트",
+    "proj.cat4": "데스크톱 & 웹 애플리케이션", "proj.cat4_count": "5개 프로젝트",
+    "proj.mdview.title": "Markdown 뷰어",
+    "proj.mdview.desc": "Tauri v2와 Rust로 만든 가벼운 오프라인 우선 Windows용 Markdown 뷰어.",
     "proj.pv.title": "PV 태양광 발전량 예측 API",
     "proj.pv.desc": "한국 10개 태양광 발전소의 익일 발전량 예측. 6개 딥러닝 아키텍처의 Flask REST API.",
     "proj.pv.detail": "<strong>모델:</strong> BiLSTM, Stacked BiLSTM, LSTM, ConvLSTM, RNN. Sensors 2023 (MDPI) 및 ICUFN 2023 발표.",
-    "proj.pv.m1": "태양광 사이트", "proj.pv.m2": "DL 모델", "proj.pv.m3": "피캘",
+    "proj.pv.m1": "태양광 사이트", "proj.pv.m2": "DL 모델", "proj.pv.m3": "피처",
     "proj.energy.title": "스마트홈 에너지 소비 예측",
     "proj.energy.desc": "비교 연구: ARIMA/SARIMA vs LSTM/BiLSTM/GRU/RNN, 503,910개 스마트 미터 레코드.",
     "proj.energy.detail": "<strong>핵심 발견:</strong> LSTM 다변량이 MSE=0.022, MAE=0.110 달성. BiLSTM R²=0.9549.",
@@ -188,7 +212,7 @@ const T = {
     "proj.security.title": "보안 분석", "proj.security.desc": "모션 감지, 침입 감지, 배회 감지.",
     "proj.analytics.title": "인원 분석", "proj.analytics.desc": "라인 크로싱 카운터, 구역 점유율, 교통 흐름 분석.",
     "proj.gesture.title": "손 제스처 인식", "proj.gesture.desc": "MediaPipe 21개 랜드마크, 9개 제스처 클래스.",
-    "proj.fitness.title": "운동 트래커", "proj.fitness.desc": "푸쉬업, 스쿼트, 플랑크 추적.",
+    "proj.fitness.title": "운동 트래커", "proj.fitness.desc": "푸쉬업, 스쿼트, 플랭크 추적.",
     "proj.server.title": "서버실 모니터링", "proj.server.desc": "다중 센서 IoT, LoRa, MariaDB, Telegram 봇.",
     "proj.intruder.title": "침입자 감지", "proj.intruder.desc": "OpenCV DNN + Telegram 자동 알림.",
     "proj.vtt.title": "VTT — 음성-텍스트 변환", "proj.vtt.desc": "Google Cloud Speech-to-Text API, 인도네시아어.",
@@ -204,16 +228,18 @@ const T = {
     "research.tag": "연구", "research.title": "정부 지원 프로젝트",
     "research.desc": "한국 정부 부처가 지원하는 국민대학교 주요 국책 연구 프로젝트 참여.",
     "research.r1": "재생에너지 그리드 안정화",
-    "research.r2": "5G 다중대역 산업용 스몸셀 개발",
+    "research.r2": "5G 다중대역 산업용 스몰셀 개발",
     "research.r3": "지능형 IoE 데이터 연구 플랫폼",
     "research.r4": "V2X 양자 AI 트리플 센서 OCC 시스템",
     "research.r5": "VPP ESS 서비스 플랫폼 개발",
     "research.r6": "초고속 OCC 및 정밀 위치 추정",
     "exp.tag": "경력", "exp.title": "전문 경력",
-    "exp.e1.date": "2025년 10월 — 현재", "exp.e1.role": "피지컴 AI 엔지니어",
-    "exp.e1.l1": "번역 및 RAG 프로젝트를 위한 LLM 파인튀닝",
-    "exp.e1.l2": "로보틱스 시스템을 활용한 스마트 점자 프린터 개발",
-    "exp.e1.l3": "Jetson 플랫폼에서 ROS 2 기반 로보틱 암 개발",
+    "exp.e1.date": "2025년 10월 — 현재", "exp.e1.role": "피지컬 AI 엔지니어",
+    "exp.e1.l1": "프린터 및 IoT 연동 전 구간 담당: 엠보서 펌웨어, 라즈베리 파이 소프트웨어, 데스크톱 인쇄 에이전트, 클라우드 인쇄 연동 (300건 이상 PR 병합)",
+    "exp.e1.l2": "C 기반 엠보서 펌웨어 개발, 캐리지 모션 개선으로 전면 촉각 그래픽 지원",
+    "exp.e1.l3": "여러 엠보서 모델을 위한 SVG/PDF 촉각 변환 개발",
+    "exp.e1.l4": "OTA를 지원하는 라즈베리 파이 프린터 펌웨어 출시, 코드 서명된 Windows 에이전트 배포",
+    "exp.e1.l5": "점자 언어 모델(LoRA, QLoRA, RAG), UEB/Nemeth 변환기, ROS 2 로봇 암 PID 제어 개발 및 로봇 암을 개발한 주니어 엔지니어 지도",
     "exp.e2.role": "AI & IoT 연구원",
     "exp.e2.l1": "악조건 환경에서의 LED 감지 및 추적 시스템 개발",
     "exp.e2.l2": "기상 데이터 기반 PV 발전량 예측 모델 구축",
@@ -239,19 +265,19 @@ const T = {
     "skills.g1": "프로그래밍 언어", "skills.g2": "AI & 머신러닝",
     "skills.g3": "로보틱스 & 하드웨어", "skills.g4": "도구 & 플랫폼",
     "contact.tag": "연락처", "contact.title": "함께 만들어 봅시다.",
-    "contact.subtitle": "AI/로보틱스 엔지니어링, 연구 협업, 콘설팅 프로젝트 가능합니다. 현재 대한민국 서울 거주.",
+    "contact.subtitle": "AI/로보틱스 엔지니어링, 연구 협업, 컨설팅 프로젝트 가능합니다. 현재 대한민국 서울 거주.",
   },
   id: {
     "nav.about": "Tentang", "nav.expertise": "Keahlian", "nav.papers": "Publikasi",
     "nav.projects": "Proyek", "nav.career": "Karir", "nav.contact": "Kontak",
     "hero.tag": "Physical AI Engineer",
     "hero.name": 'Muhammad Miftah <em>Faridh</em>',
-    "hero.subtitle": "Membangun sistem cerdas di persimpangan AI, robotika, dan edge computing. Dari fine-tuning LLM dan smart braille printer hingga kendaraan laut otonom.",
+    "hero.subtitle": "Di Orinu saya mengembangkan printer braille dari ujung ke ujung, dari firmware embedded sampai cloud. Sebelumnya: edge AI di Jetson, optical camera communication, dan kendaraan laut otonom.",
     "hero.affiliation": 'M.S. Teknik Elektronika, Kookmin University &mdash; Saat ini di <a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a>, Seoul',
     "hero.cta": "Hubungi Saya", "hero.stat1": "Publikasi", "hero.stat2": "Penghargaan Int'l",
     "hero.stat3": "Proyek Pemerintah", "hero.stat4": "Open Source",
     "about.tag": "Tentang", "about.title": "Engineer, Peneliti<br>&amp; Problem Solver",
-    "about.p1": "AI Developer dan Robotics Engineer dengan pengalaman langsung di LLM fine-tuning (T5, Gemma, LLaMA dengan LoRA, QLoRA, dan RAG) serta sistem robotik real-time menggunakan ROS 2 dan platform NVIDIA Jetson.",
+    "about.p1": "Physical AI Engineer di Orinu, memegang integrasi printer dan IoT untuk platform cetak braille: firmware embosser dalam C, software perangkat Raspberry Pi, agen cetak desktop, konektivitas perangkat, dan integrasi cetak di cloud. Di tahun pertama saya menggabungkan 300+ pull request. Saya juga melakukan fine-tuning LLM (LoRA, QLoRA, RAG), menjalankan ROS 2 di NVIDIA Jetson, dan menerbitkan paper di IEEE Access dan MDPI Sensors.",
     "about.p2": "Dari kendaraan laut otonom di Tim Robotika Universitas Indonesia hingga drone terkoneksi 5G di XL Axiata, dari OCC di Kookmin University hingga Smart Braille Printer di orinu.ai — saya menjembatani AI dan robotika.",
     "about.card1.title": "M.S. EE, Kookmin University", "about.card1.desc": "Seoul, Korea Selatan (2022–2024)",
     "about.card2.title": "S1 Teknik Komputer", "about.card2.desc": "Universitas Indonesia (2018–2022)",
@@ -277,10 +303,21 @@ const T = {
     "proj.tag": "Portofolio", "proj.title": "Proyek & Open Source",
     "proj.desc": "Riset AI/ML, deployment Edge AI di Jetson, sistem IoT, dan aplikasi full-stack.",
     "proj.github": "Lihat di GitHub",
-    "proj.cat1": "Riset AI & Deep Learning", "proj.cat1_count": "2 proyek",
+    "proj.cat0": "Physical AI & Cetak Braille di Orinu", "proj.cat0_count": "4 proyek",
+    "proj.niro.title": "Firmware Embosser Braille",
+    "proj.niro.desc": "Firmware embosser dalam C di mikrokontroler STM32. Perbaikan gerak carriage memperpendek jarak tempuh head dan memungkinkan grafik taktil satu halaman penuh, diverifikasi di hardware.",
+    "proj.tactile.title": "Pipeline Grafik Taktil",
+    "proj.tactile.desc": "Mengubah SVG, PDF, dan gambar raster menjadi pola titik timbul untuk beberapa model embosser, dengan skala diverifikasi di kertas.",
+    "proj.agent.title": "Agen Cetak Windows",
+    "proj.agent.desc": "Agen desktop yang selalu aktif dengan pairing perangkat yang aman dan kontrol printer USB, dirilis sebagai installer yang ditandatangani.",
+    "proj.pi.title": "Firmware Printer Raspberry Pi 2.0",
+    "proj.pi.desc": "Firmware di dalam printer dengan UI web, kontrol LED dan tombol, serta update OTA.",
+    "proj.cat1": "Riset AI & Deep Learning", "proj.cat1_count": "3 proyek",
     "proj.cat2": "Edge AI di NVIDIA Jetson", "proj.cat2_count": "8 proyek",
     "proj.cat3": "Sistem IoT & Keamanan", "proj.cat3_count": "2 proyek",
-    "proj.cat4": "Aplikasi Web", "proj.cat4_count": "4 proyek",
+    "proj.cat4": "Aplikasi Desktop & Web", "proj.cat4_count": "5 proyek",
+    "proj.mdview.title": "Markdown Viewer",
+    "proj.mdview.desc": "Markdown viewer ringan dan offline-first untuk Windows, dibangun dengan Tauri v2 dan Rust.",
     "proj.pv.title": "API Peramalan Daya PV Surya",
     "proj.pv.desc": "Prediksi pembangkitan listrik hari berikutnya di 10 lokasi Korea Selatan. Flask REST API dengan 6 arsitektur deep learning.",
     "proj.pv.detail": "<strong>Model:</strong> BiLSTM, Stacked BiLSTM, LSTM, ConvLSTM, RNN. Dipublikasi di Sensors 2023 (MDPI) dan ICUFN 2023.",
@@ -323,9 +360,11 @@ const T = {
     "research.r6": "OCC Ultra High Rate & Lokalisasi Presisi",
     "exp.tag": "Karir", "exp.title": "Perjalanan Profesional",
     "exp.e1.date": "Okt 2025 — Sekarang", "exp.e1.role": "Physical AI Engineer",
-    "exp.e1.l1": "Fine-tuning LLM untuk terjemahan & RAG",
-    "exp.e1.l2": "Pengembangan Smart Braille Printer menggunakan sistem robotik",
-    "exp.e1.l3": "Pengembangan lengan robot dengan ROS 2 pada platform Jetson",
+    "exp.e1.l1": "Memegang integrasi printer dan IoT dari ujung ke ujung: firmware embosser, software Raspberry Pi, agen cetak desktop, dan integrasi cetak cloud (300+ PR)",
+    "exp.e1.l2": "Firmware embosser dalam C, termasuk perbaikan gerak carriage yang membuka grafik taktil satu halaman penuh",
+    "exp.e1.l3": "Membangun konversi SVG/PDF ke taktil untuk beberapa model embosser",
+    "exp.e1.l4": "Merilis firmware printer Raspberry Pi dengan update OTA dan agen Windows yang ditandatangani",
+    "exp.e1.l5": "Braille language model (LoRA, QLoRA, RAG), konverter UEB/Nemeth, dan kontrol PID untuk lengan robot ROS 2, sambil membimbing engineer junior yang membangun lengannya",
     "exp.e2.role": "Peneliti AI & IoT",
     "exp.e2.l1": "Merancang sistem deteksi dan pelacakan LED untuk cuaca buruk",
     "exp.e2.l2": "Membangun model peramalan deret waktu untuk PV power generation",
@@ -544,6 +583,35 @@ export default function Home() {
           <div className="projects-category">
             <div className="category-header reveal">
               <span className="category-dot red"></span>
+              <span className="category-title">{t('proj.cat0')}</span>
+              <span className="category-count">{t('proj.cat0_count')}</span>
+            </div>
+            <div className="bento-grid">
+              <div className="bento-card featured reveal">
+                <div className="bento-card-type">Embedded C / Firmware</div>
+                <h3>{t('proj.niro.title')}</h3>
+                <p>{t('proj.niro.desc')}</p>
+                <div className="bento-tags">{['C','STM32','Embedded','Motion Control'].map(tag => <span key={tag} className="bento-tag">{tag}</span>)}</div>
+                <a href="https://orinu.ai/" className="bento-link" target="_blank" rel="noopener"><span>orinu.ai</span> <Arrow /></a>
+              </div>
+              {([
+                { key: 'tactile', type: 'Accessibility / Tactile Graphics', tags: ['Python','SVG','PDF','Accessibility'] },
+                { key: 'agent', type: 'Windows Agent / IoT', tags: ['Python','Windows','USB','IoT'] },
+                { key: 'pi', type: 'Raspberry Pi / Embedded Linux', tags: ['Raspberry Pi','Python','React','OTA'] },
+              ] as const).map((p) => (
+                <div key={p.key} className="bento-card reveal">
+                  <div className="bento-card-type">{p.type}</div>
+                  <h3>{t(`proj.${p.key}.title` as TKey)}</h3>
+                  <p>{t(`proj.${p.key}.desc` as TKey)}</p>
+                  <div className="bento-tags">{(p.tags as readonly string[]).map(tag => <span key={tag} className="bento-tag">{tag}</span>)}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="projects-category">
+            <div className="category-header reveal">
+              <span className="category-dot red"></span>
               <span className="category-title">{t('proj.cat1')}</span>
               <span className="category-count">{t('proj.cat1_count')}</span>
             </div>
@@ -651,6 +719,7 @@ export default function Home() {
             </div>
             <div className="bento-grid">
               {([
+                { key: 'mdview', type: 'Desktop / Tauri', tags: ['Tauri v2','Rust','React','TypeScript'], href: 'markdown-viewer' },
                 { key: 'vtt', type: 'Speech-to-Text / Google Cloud', tags: ['Laravel 5.6','Google Cloud','Vue.js','FFmpeg'], href: 'vtt' },
                 { key: 'tweet', type: 'NLP / Social Platform', tags: ['Laravel 7','Twitter API','PHP','MySQL'], href: 'tweetbullyingdetector' },
                 { key: 'vetracker', type: 'Management / Livewire', tags: ['Laravel 8','Livewire','Tailwind CSS'], href: 'vetracker' },
@@ -742,7 +811,7 @@ export default function Home() {
               <div className="exp-content">
                 <h3>{t('exp.e1.role')}</h3>
                 <h4><a href="https://orinu.ai/" target="_blank" rel="noopener">orinu.ai</a> &middot; Hwaseong, South Korea</h4>
-                <ul><li>{t('exp.e1.l1')}</li><li>{t('exp.e1.l2')}</li><li>{t('exp.e1.l3')}</li></ul>
+                <ul><li>{t('exp.e1.l1')}</li><li>{t('exp.e1.l2')}</li><li>{t('exp.e1.l3')}</li><li>{t('exp.e1.l4')}</li><li>{t('exp.e1.l5')}</li></ul>
               </div>
             </div>
             <div className="exp-item reveal">
@@ -754,7 +823,7 @@ export default function Home() {
               </div>
             </div>
             <div className="exp-item reveal">
-              <div className="exp-date">Feb 2022 &mdash; Jun 2022</div>
+              <div className="exp-date">Feb 2022 &mdash; May 2022</div>
               <div className="exp-content">
                 <h3>{t('exp.e3.role')}</h3>
                 <h4>PT. XL Axiata Tbk &middot; Jakarta, Indonesia</h4>
@@ -795,7 +864,7 @@ export default function Home() {
                 <div className="edu-badge">{t('edu.e2.degree')}</div>
                 <h3>{t('edu.e2.school')}</h3>
                 <p className="edu-field">{t('edu.e2.field')}</p>
-                <p className="edu-period">Aug 2018 &ndash; Sep 2022 &middot; Depok, Indonesia</p>
+                <p className="edu-period">Aug 2018 &ndash; Jul 2022 &middot; Depok, Indonesia</p>
               </div>
             </div>
           </div>
