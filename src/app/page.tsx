@@ -864,7 +864,7 @@ export default function Home() {
                 <div className="edu-badge">{t('edu.e2.degree')}</div>
                 <h3>{t('edu.e2.school')}</h3>
                 <p className="edu-field">{t('edu.e2.field')}</p>
-                <p className="edu-period">Aug 2018 &ndash; Sep 2022 &middot; Depok, Indonesia</p>
+                <p className="edu-period">Aug 2018 &ndash; Jul 2022 &middot; Depok, Indonesia</p>
               </div>
             </div>
           </div>
